@@ -7,6 +7,7 @@
   </head>
   <body>
     <nav>
+      <!--nav is for links only-->
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -19,13 +20,35 @@
     <h1>Containers and Forms</h1>
     <form action="index.html" method="get">
       <div>
+        <!--div groups things together-->
         <label for="favoriteSnack">Favorite Snack:</label>
-        <input type="text" name="favoriteSnack" id="favoriteSnack" />
+        <input
+          type="text"
+          name="favoriteSnack"
+          id="favoriteSnack"
+          placeholder="peeps"
+          required
+        />
+        <!--required causes an alert asking for text to be filled-->
       </div>
       <div>
         <label for="leastFavoriteSnack">Least Favorite Snack:</label>
-        <input type="text" name="leastFavoriteSnack" id="leastFavoriteSnack" />
+        <input
+          type="text"
+          name="leastFavoriteSnack"
+          id="leastFavoriteSnack"
+          value="Whoppers"
+        />
       </div>
+      <div>
+        <label for="explain">Explain Your Choices:</label>
+        <textarea name="explain" id="explain"></textarea>
+      </div>
+      <div>
+        <label for="snackColorMood">Snack Color Mood</label>
+        <input type="color" name="snackColorMood" id="snackColorMood" />
+      </div>
+      <input type="submit" value="Submit Snacks" />
     </form>
   </body>
 </html>
